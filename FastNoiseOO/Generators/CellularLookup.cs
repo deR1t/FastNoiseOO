@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FastNoiseSharp.Generators
+﻿namespace FastNoiseOO.Generators
 {
     /// <summary>
     /// Creates many cells, value of each cell is based on the lookup generator.

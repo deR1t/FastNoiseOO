@@ -1,11 +1,4 @@
-﻿using FastNoiseSharp.Generators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FastNoiseSharp.Generators
+﻿namespace FastNoiseOO.Generators
 {
     /// <summary>
     /// It adds the values of generators together.

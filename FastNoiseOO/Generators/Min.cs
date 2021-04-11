@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FastNoiseSharp.Generators
+﻿namespace FastNoiseOO.Generators
 {    
     /// <summary>
     /// Compares two values and returns the lowest.
