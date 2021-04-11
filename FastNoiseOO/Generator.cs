@@ -68,6 +68,15 @@
         {
         }
 
+        public static Generator NewFromEncodedNodeTree(string encodedNodeTree)
+        {
+
+            var gen = new Generator();
+            gen._generator = FastNoise.FromEncodedNodeTree(encodedNodeTree);
+            return gen;
+
+        }
+
         /// <summary>
         /// Generates a flat array of 2D noise.
         /// </summary>
