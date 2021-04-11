@@ -1,4 +1,5 @@
-﻿using FastNoiseOO.Generators;
+﻿using System;
+using FastNoiseOO.Generators;
 
 namespace FastNoiseOO
 {
@@ -247,7 +248,6 @@ namespace FastNoiseOO
 
         }
 
-
         public static Multiply operator *(Generator a, Generator b)
         {
 
@@ -269,8 +269,6 @@ namespace FastNoiseOO
             return mul;
 
         }
-
-
 
         public static Subtract operator -(Generator a, Generator b)
         {
