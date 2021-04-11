@@ -17,7 +17,7 @@
         /// <param name="gen">Domain warp to set the source to.</param>
         public void SetSource(DomainWarp gen)
         {
-            base.SetSource(gen);
+            _generator.Set("DomainWarpSource", gen._generator);
         }
 
     }

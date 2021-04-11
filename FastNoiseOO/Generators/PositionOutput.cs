@@ -25,16 +25,16 @@ namespace FastNoiseOO.Generators
             switch (dimension)
             {
                 case Dim.X:
-                    _generator.Set("XMultiplier", multiplier);
+                    _generator.Set("MultiplierX", multiplier);
                     break;
                 case Dim.Y:
-                    _generator.Set("YMultiplier", multiplier);
+                    _generator.Set("MultiplierY", multiplier);
                     break;
                 case Dim.Z:
-                    _generator.Set("ZMultiplier", multiplier);
+                    _generator.Set("MultiplierZ", multiplier);
                     break;
                 case Dim.W:
-                    _generator.Set("WMultiplier", multiplier);
+                    _generator.Set("MultiplierW", multiplier);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(dimension), dimension, null);
@@ -46,16 +46,16 @@ namespace FastNoiseOO.Generators
             switch (dimension)
             {
                 case Dim.X:
-                    _generator.Set("XOffset", offset);
+                    _generator.Set("OffsetX", offset);
                     break;
                 case Dim.Y:
-                    _generator.Set("YOffset", offset);
+                    _generator.Set("OffsetY", offset);
                     break;
                 case Dim.Z:
-                    _generator.Set("ZOffset", offset);
+                    _generator.Set("OffsetZ", offset);
                     break;
                 case Dim.W:
-                    _generator.Set("WOffset", offset);
+                    _generator.Set("OffsetW", offset);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(dimension), dimension, null);

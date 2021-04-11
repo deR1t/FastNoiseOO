@@ -32,16 +32,16 @@ namespace FastNoiseOO.Generators
             switch (dimension)
             {
                 case Dim.X:
-                    _generator.Set("XScale", value);
+                    _generator.Set("ScaleX", value);
                     break;
                 case Dim.Y:
-                    _generator.Set("YScale", value);
+                    _generator.Set("ScaleY", value);
                     break;
                 case Dim.Z:
-                    _generator.Set("ZScale", value);
+                    _generator.Set("ScaleZ", value);
                     break;
                 case Dim.W:
-                    _generator.Set("WScale", value);
+                    _generator.Set("ScaleW", value);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(dimension), dimension, null);
