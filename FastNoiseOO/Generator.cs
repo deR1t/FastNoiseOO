@@ -1,4 +1,6 @@
-﻿namespace FastNoiseOO
+﻿using FastNoiseOO.Generators;
+
+namespace FastNoiseOO
 {
 
     /// <summary>
@@ -222,7 +224,121 @@
             return noise;
 
         }
-        
+
+        public static Add operator +(Generator a, Generator b)
+        {
+
+            var add = new Add();
+            add.SetLHS(a);
+            add.SetRHS(b);
+
+            return add;
+
+        }
+
+        public static Add operator +(Generator a, float b)
+        {
+
+            var add = new Add();
+            add.SetLHS(a);
+            add.SetRHS(b);
+
+            return add;
+
+        }
+
+
+        public static Multiply operator *(Generator a, Generator b)
+        {
+
+            var mul = new Multiply();
+            mul.SetLHS(a);
+            mul.SetRHS(b);
+
+            return mul;
+
+        }
+
+        public static Multiply operator *(Generator a, float b)
+        {
+
+            var mul = new Multiply();
+            mul.SetLHS(a);
+            mul.SetRHS(b);
+
+            return mul;
+
+        }
+
+
+
+        public static Subtract operator -(Generator a, Generator b)
+        {
+
+            var sub = new Subtract();
+            sub.SetLHS(a);
+            sub.SetRHS(b);
+
+            return sub;
+
+        }
+
+        public static Subtract operator -(Generator a, float b)
+        {
+
+            var sub = new Subtract();
+            sub.SetLHS(a);
+            sub.SetRHS(b);
+
+            return sub;
+
+        }
+
+        public static Subtract operator -(float a, Generator b)
+        {
+
+            var sub = new Subtract();
+            sub.SetLHS(a);
+            sub.SetRHS(b);
+
+            return sub;
+
+        }
+
+        public static Divide operator /(Generator a, Generator b)
+        {
+
+            var div = new Divide();
+            div.SetLHS(a);
+            div.SetRHS(b);
+
+            return div;
+
+        }
+
+        public static Divide operator /(Generator a, float b)
+        {
+
+            var div = new Divide();
+            div.SetLHS(a);
+            div.SetRHS(b);
+
+            return div;
+
+        }
+
+        public static Divide operator /(float a, Generator b)
+        {
+
+            var div = new Divide();
+            div.SetLHS(a);
+            div.SetRHS(b);
+
+            return div;
+
+        }
+
+
     }
 
 }
